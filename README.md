@@ -24,6 +24,26 @@ The project demonstrates how modern AI agents can combine memory, reasoning, too
 
 🌐 Live App: https://petbloom-40612.web.app
 
+## ❓ Problem
+
+Pet owners often struggle to maintain consistent care routines for their pets.
+
+Important tasks such as vaccination schedules, medication, hydration, exercise, nutrition, and symptom tracking are usually managed through scattered notes, reminders, or memory.
+
+Most existing pet apps act only as record-keeping tools and do not understand the pet's history or provide personalized guidance.
+
+PetBloom addresses this by creating an AI-powered companion that remembers pet information, analyzes care patterns, and proactively helps owners make better decisions.
+
+## 💡 Solution
+
+PetBloom acts as an intelligent pet care assistant that combines AI reasoning, long-term memory, and personalized recommendations.
+
+The system:
+- stores important pet information
+- learns from daily care activities
+- retrieves relevant history during conversations
+- provides personalized suggestions
+- helps owners maintain healthier routines
 ---
 
 # ✨ Features
