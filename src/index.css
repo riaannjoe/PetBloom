@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand Fonts */
+  --font-display: "Outfit", sans-serif;
+  --font-sans: "Inter", sans-serif;
+
+  /* Brand Colors */
+  --color-bloom-rose: #FF7096;
+  --color-bloom-rose-light: #FFA3B1;
+  --color-mint-wellness: #79E6C3;
+  --color-warm-cream: #FAF6F0;
+  --color-pure-linen: #FFFFFF;
+  --color-deep-charcoal: #1C1917;
+  --color-warm-slate: #78716C;
+  --color-muted-slate: #94A3B8;
+  --color-midnight-forest: #0F172A;
+  --color-slate-velvet: #1E293B;
+  --color-frosted-pearl: #F1F5F9;
+
+  /* Pastel Status Categories */
+  --color-pastel-nutrition: #FFD3B6;
+  --color-pastel-exercise: #A8E6CF;
+  --color-pastel-stool-urine: #FDFFB6;
+  --color-pastel-hygiene: #E8AEFF;
+
+  /* Status Badge Colors */
+  --color-status-success: #10B981;
+  --color-status-warning: #EF4444;
+  --color-status-info: #3B82F6;
+
+  /* Shadows */
+  --shadow-bloom: 0 4px 24px -4px rgb(255 112 150 / 0.15);
+  --shadow-card: 0 1px 3px rgb(28 25 23 / 0.06);
+
+  /* Typography scale */
+  --text-display: 3rem;
+  --text-h1: 2rem;
+  --text-h2: 1.5rem;
+  --text-subheading: 1.125rem;
+  --text-body: 0.9375rem;
+  --text-caption: 0.75rem;
+
+  /* Custom Transitions & Animations */
+  --animate-spring-bounce: spring-bounce 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  --animate-shimmer: shimmer 2s infinite linear;
+  --animate-slide-in: slide-in 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+  @keyframes spring-bounce {
+    0% { transform: scale(0.95); opacity: 0.8; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+
+  @keyframes slide-in {
+    0% { transform: translateX(12px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+}
+
+/* Base Styles & Custom Scrollbars */
+@layer base {
+  html {
+    @apply antialiased;
+  }
+
+  body {
+    @apply bg-warm-cream text-deep-charcoal font-sans transition-colors duration-300;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-warm-slate/30 rounded-full hover:bg-warm-slate/50 transition-colors;
+  }
+}
+
+/* Dark Mode Global Overrides */
+.dark body {
+  @apply bg-midnight-forest text-frosted-pearl;
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-sm;
+}
+
+.dark .glass-panel {
+  @apply bg-slate-velvet/70 backdrop-blur-md border border-white/5 shadow-md;
+}
+
+/* Page transition helper */
+.page-enter {
+  animation: slide-in 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
