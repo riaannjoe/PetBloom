@@ -22,7 +22,7 @@ The project demonstrates how modern AI agents can combine memory, reasoning, too
 
 ## 🚀 Live Demo
 
-🌐 Live App: https://your-deployment-url
+🌐 Live App: https://petbloom-40612.web.app
 
 ---
 
@@ -293,15 +293,15 @@ VITE_API_BASE_URL=http://localhost:3001/api
 
 # 📸 Screenshots
 
-> Replace these with actual screenshots before submission.
+<img width="1917" height="907" alt="image" src="https://github.com/user-attachments/assets/1099be44-50c9-49c7-9b96-e7a9f277f463" />
+<img width="1917" height="897" alt="image" src="https://github.com/user-attachments/assets/22d5eb29-c556-4855-a573-5db0311f7ec3" />
+<img width="1917" height="906" alt="image" src="https://github.com/user-attachments/assets/81773650-d8b5-4084-9e86-6e14ddb89b05" />
+<img width="1917" height="891" alt="image" src="https://github.com/user-attachments/assets/43b17531-0a26-4b21-b7d6-9c137a7628e6" />
+<img width="1917" height="870" alt="image" src="https://github.com/user-attachments/assets/938ea24d-c8db-47eb-9f1d-fd9a3f13627f" />
+<img width="1917" height="895" alt="image" src="https://github.com/user-attachments/assets/ede68443-b557-4cf8-9e30-7e747837c6e8" />
+<img width="1917" height="897" alt="image" src="https://github.com/user-attachments/assets/36405292-3bdf-4621-842b-dd43f29e491d" />
 
-- Landing Page
-- Dashboard
-- AI Chat
-- Reports
-- Pet Profile
-- Analytics
-- Onboarding
+
 
 ---
 
