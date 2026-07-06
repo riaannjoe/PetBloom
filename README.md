@@ -14,7 +14,7 @@
 
 ## 📖 Overview
 
-PetBloom is an AI-powered pet care platform built around an Agentic AI architecture combining long-term memory, tool calling, contextual retrieval, streaming LLM responses, and rule-based recommendations.
+PetBloom is an AI-powered pet care platform built around an Agentic AI architecture combining long-term memory, tool calling, contextual retrieval, streaming LLM responses, and personalized recommendation generation.
 
 Instead of simply storing pet information, PetBloom continuously observes daily care activities, remembers important events, analyzes historical patterns, and generates intelligent recommendations that help owners provide healthier and more consistent care.
 
@@ -44,6 +44,25 @@ The system:
 - retrieves relevant history during conversations
 - provides personalized suggestions
 - helps owners maintain healthier routines
+---
+# 🤔 Why an AI Agent?
+
+Traditional pet apps only store information.
+
+PetBloom uses an AI Agent because pet care requires understanding context over time.
+
+A normal chatbot answers based only on the current message.
+
+PetBloom can:
+
+- 🧠 Remember previous pet information
+- 🔍 Retrieve relevant history
+- 🛠️ Use tools to gather additional context
+- 💭 Reason over multiple data sources
+- 💡 Provide personalized recommendations
+
+This allows PetBloom to move from passive tracking to proactive care assistance.
+
 ---
 
 # ✨ Features
@@ -137,6 +156,123 @@ Everything contributes to personalized recommendations.
 - Accessible components
 
 ---
+## 🤖 Agent Capabilities
+
+PetBloom is designed as an AI Agent rather than a traditional chatbot.  
+It combines memory, tool usage, contextual retrieval, and reasoning to provide personalized pet care assistance.
+
+---
+
+## 🧠 1. Long-Term Memory
+
+PetBloom maintains important information about each pet and retrieves relevant details when needed.
+
+The agent remembers:
+
+- 🐾 Pet profile information
+  - Name
+  - Breed
+  - Age
+  - Preferences
+
+- 🏥 Health history
+  - Previous symptoms
+  - Medical observations
+  - Allergies
+  - Vaccination records
+
+- 🍖 Care patterns
+  - Nutrition habits
+  - Exercise routines
+  - Owner preferences
+
+This allows PetBloom to provide responses based on the pet's history instead of generic answers.
+
+---
+
+## 🛠️ 2. Tool Usage
+
+PetBloom uses specialized tools to collect additional context and improve decision-making.
+
+Available tools include:
+
+### 🏥 Health Tracker
+Tracks and retrieves:
+- Symptoms
+- Medications
+- Health observations
+- Medical history
+
+### 🏃 Activity Tracker
+Monitors:
+- Exercise patterns
+- Activity levels
+- Daily routines
+
+### 🌦️ Weather Information
+Uses environmental context to provide better recommendations.
+
+Example:
+> "Since today's temperature is high, consider reducing outdoor activity and ensuring your pet has enough water."
+
+Tools allow the agent to gather real-world information before generating recommendations.
+
+---
+
+## 🧩 3. Contextual Reasoning
+
+PetBloom combines multiple sources of information before responding.
+
+Instead of answering isolated questions, PetBloom understands patterns over time.
+
+The agent analyzes:
+
+Current User Query
++
+Retrieved Memories
++
+Pet History
++
+Tool Outputs
+↓
+AI Reasoning
+↓
+Personalized Response
+
+Example:
+
+A decrease in activity alone may not be concerning.
+
+However:
+
+↓ Activity
++
+↓ Water Intake
++
+↓ Appetite
++
+Previous Health History
+
+
+may indicate that the owner should monitor the pet more carefully.
+
+---
+
+## 💡 4. Personalized Recommendations
+
+After analyzing context, PetBloom generates actionable suggestions.
+
+Recommendations can include:
+
+- 🥗 Nutrition adjustments
+- 💧 Hydration reminders
+- 🏃 Activity suggestions
+- 💊 Medication reminders
+- 🩺 Health monitoring advice
+
+The goal is to transform pet care from passive tracking into proactive assistance.
+
+---
 
 # 🏗️ AI Agent Architecture
 
@@ -203,7 +339,7 @@ Update Memory
 | React Router | Routing |
 | Gemini API | AI Responses |
 | Canvas Confetti | Celebration Effects |
-
+| Firebase | Deployment & Hosting |
 ---
 
 # 📂 Project Structure
@@ -344,6 +480,50 @@ VITE_API_BASE_URL=http://localhost:3001/api
 ✅ Modern Responsive UI
 
 ---
+
+# 🌐 Deployment
+
+PetBloom is deployed using Firebase Hosting.
+
+Production URL:
+https://petbloom-40612.web.app
+
+The application is configured for public access so users and judges can interact with the AI assistant directly.
+
+---
+
+# 🔐 Security Considerations
+
+PetBloom follows secure development practices:
+
+- 🔑 API keys are stored using environment variables
+- 🚫 Sensitive credentials are never committed to GitHub
+- 🛡️ `.env` files are excluded using `.gitignore`
+- ⚙️ Mock mode allows development without exposing production keys
+
+---
+
+# 🛤️ Development Journey
+
+PetBloom started as a simple pet tracking idea.
+
+During development, it evolved into an AI Agent system by incorporating:
+
+- Long-term memory
+- Context retrieval
+- Tool usage
+- Reasoning-based recommendations
+
+The main learning was that useful AI systems are not created by simply connecting an LLM to an interface.
+
+They require:
+- relevant context
+- memory
+- tools
+- clear responsibilities
+
+---
+
 
 # 🚧 Future Improvements
 
