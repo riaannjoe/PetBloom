@@ -8,6 +8,7 @@
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-v4-38BDF8?logo=tailwindcss)
 ![Zustand](https://img.shields.io/badge/Zustand-State-orange)
 ![Gemini](https://img.shields.io/badge/Google-Gemini-blue?logo=google)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ---
 
