@@ -1,4 +1,4 @@
-#🐾 PetBloom 🌸
+🐾 PetBloom 🌸
 
 > **An AI-powered Pet Care Concierge that helps pet owners track health, remember important events, and receive personalized care recommendations.**
 
