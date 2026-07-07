@@ -553,6 +553,9 @@ It demonstrates practical applications of:
 - Recommendation Systems
 - Modern Frontend Architecture
 
+YouTube demo video:
+https://youtu.be/dcVAso7lU_Q?si=p_yQFIUnSRirD9_p
+
 ---
 
 # 👩‍💻 Author
